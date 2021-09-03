@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <title>Calculate Ratio</title>
+
+
+  <!-- BOOTSTRAP CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+  <!-- MY STYLES -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+
+
+</head>
+
+<body>
+  <div class="container p-5 mt-5">
+    <h3 class="mb-5 text-center title animate__animated animate__backInDown">Calcule a quantidade de pixels baseados em um
+      Aspect Ratio definido</h3>
+
+    <form class="row m-auto w-50">
+      <div class="col-sm-6 mb-3 animate__animated animate__fadeInLeft">
+        <label for="ratio1">Ratio width</label>
+        <input type="number" id="ratio1">
+      </div>
+
+      <div class="col-sm-6 mb-3 animate__animated animate__fadeInRight">
+        <label for="ratio1">Ratio heigth</label>
+        <input type="number" id="ratio2">
+      </div>
+
+      <div class="col-sm-6 mb-3 animate__animated animate__fadeInLeft">
+        <label for="val1">Pixels width</label>
+        <input type="number" id="val1">
+      </div>
+
+      <div class="col-sm-6 mb-3 animate__animated animate__fadeInRight">
+        <label for="val2">Pixels height</label>
+        <input type="number" id="val2">
+      </div>
+
+      <!-- <input class="col-4 m-auto" type="submit" value="Calcular"> -->
+    </form>
+
+    <h4 class="result text-center mt-5 noselect animate__animated animate__fadeInUp" onclick="copy()">
+      <span>
+        <span class="mr-2" id="idResult"></span>
+        <i id="idNoCheck" class="bi-clipboard animate__animated"></i>
+        <i id="idCheck" class="bi bi-clipboard-check animate__animated"></i>
+      </span>
+      </i>
+    </h4>
+
+  </div>
+
+  <!-- MY SCRIPTS -->
+  <script src="scripts/main.js"></script>
+
+</body>
+
+<footer class="fixed-bottom text-center mb-2">
+  <span>
+    ©Copyright:
+    <a href="https://josielfaria.com" target="_blank"> Josiel Faria</a>
+  </span>
+</footer>
+
+</html>

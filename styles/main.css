@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(160deg, rgba(224, 245, 181, 1) 20%, rgba(237, 178, 178, 1) 84%);
+  font-family: "Inconsolata";
+  color: lightseagreen;
+}
+
+i {
+  font-size: 1.9rem;
+  color: lightseagreen;
+}
+
+a {
+  color: lightseagreen;
+  font-weight: bold;
+}
+
+.result > span {
+  padding: 1rem 2rem;
+  background-color: lightcyan;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.result:hover {
+  cursor: pointer;
+  transition: 0.2s ease;
+  /* transform: scale(1.05); */
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/*
+* INPUT STYLE's
+ */
+
+input {
+  height: 50px;
+  border: 0;
+  border-radius: 1rem;
+  color: lightseagreen;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+label,
+input {
+  width: 100%;
+  text-align: center;
+  font-size: 21px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
