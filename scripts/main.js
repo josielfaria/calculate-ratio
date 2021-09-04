@@ -35,6 +35,8 @@ function convertToPixels(val) {
 function setResult() {
   calculateFim();
   idResult.innerText = `${elemVal1.value}x${elemVal2.value}`;
+  idDemoRatio.setAttribute('data-before', convertToPixels(elemVal1.value));
+  idDemoRatio.setAttribute('data-after', convertToPixels(elemVal2.value));
 }
 
 function animateClipboard() {
