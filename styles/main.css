@@ -1,7 +1,11 @@
+html,
+body {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   height: 100vh;
-  overflow: hidden;
   background: linear-gradient(160deg, rgba(224, 245, 181, 1) 20%, rgba(237, 178, 178, 1) 84%);
   font-family: "Inconsolata";
   color: lightseagreen;
@@ -28,10 +32,6 @@ a {
   cursor: pointer;
   transition: 0.2s ease;
   /* transform: scale(1.05); */
-}
-
-.container-demo {
-  height: 300px;
 }
 
 .demo-ratio {
